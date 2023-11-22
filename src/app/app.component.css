@@ -1,8 +1,8 @@
-h3{
+h1{
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #fff;
-  font-weight: bold;
+  font-weight: 500;
 }
 .form-row {
   display: flex;

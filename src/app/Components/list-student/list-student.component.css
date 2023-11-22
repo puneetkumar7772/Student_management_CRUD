@@ -1,0 +1,9 @@
+.container{
+
+}
+@media screen  and (max-width:600px)and (min-width:310px){
+.container{
+  overflow-x: scroll;
+}
+
+}
