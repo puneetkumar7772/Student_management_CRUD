@@ -1,0 +1,11 @@
+
+{
+  "Students": [
+    { "id": 1, "Name": "Puneet Kumar", "Education": "Diploma is CSE","Email":"puneetkumar@gmail.com","City":"Shahjahanpur" },
+    { "id": 2, "Name": "Sanjay singh", "Education": "Diploma is CSE","Email":"sanjaysingh@gmail.com","City":"Shahjahanpur" },
+    { "id": 3, "Name": "Mayank kumar", "Education": "Diploma is CSE","Email":"mayankkumar@gmail.com","City":"Shahjahanpur" },
+    { "id": 4, "Name": "Mayak", "Education": "Diploma is CSE","Email":"mayank@gmail.com","City":"Shahjahanpur" },
+    { "id": 5, "Name": "Shivam", "Education": "Diploma is CSE","Email":"shivam@gmail.com","City":"Shahjahanpur" }
+
+  ]
+}
