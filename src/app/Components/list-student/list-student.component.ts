@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { AuthStudentsService } from 'src/app/auth-students.service';
 
 @Component({
@@ -7,17 +8,7 @@ import { AuthStudentsService } from 'src/app/auth-students.service';
   styleUrls: ['./list-student.component.css']
 })
 export class ListStudentComponent {
-constructor(private authstudents:AuthStudentsService){}
+constructor(private authstudents:AuthStudentsService,private toastr:ToastrService){}
 
-data:any=[]
-ngOnInit(){
-  this.getStudentsData()
-}
-getStudentsData(){
-  this.authstudents.getAllStudents().subscribe((res)=>{
-    console.log("first",res)
-   this.data=res
-   console.log("second",this.data)
-  })
-}
+
 }

@@ -1,8 +1,7 @@
 h1{
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
-  font-weight: 500;
+  font-weight: bold;
 }
 .form-row {
   display: flex;
@@ -74,4 +73,9 @@ textarea{
 }
 .form-control{
   border-radius: 10px;
+}
+th{
+  background-color: red;
+  font-size: 18px;
+  font-weight: bold;
 }

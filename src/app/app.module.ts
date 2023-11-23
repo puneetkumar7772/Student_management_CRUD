@@ -8,6 +8,9 @@ import { ListStudentComponent } from './Components/list-student/list-student.com
 import { LoginStudentComponent } from './Components/login-student/login-student.component';
 import { RegisterStudentComponent } from './Components/register-student/register-student.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
