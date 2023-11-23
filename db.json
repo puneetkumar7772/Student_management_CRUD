@@ -1,8 +1,34 @@
-
 {
   "Students": [
-    { "id": 1, "name": "Puneet Kumar","email":"puneetkumar@gmail.com","fathername":"Mr.arvind","fees":5000,"class":"8th","mobileno":9415556650,"address":"spn"},
-    { "id": 2, "name": "Puneet Kumar","email":"puneetkumar@gmail.com","fathername":"Mr.arvind","fees":5000,"class":"8th","mobileno":9415556650,"address":"spn"},
-    { "id": 3, "name": "Puneet Kumar","email":"puneetkumar@gmail.com","fathername":"Mr.arvind","fees":5000,"class":"8th","mobileno":9415556650,"address":"spn"}
+    {
+      "name": "puneet mishra",
+      "fathername": "Mr.Arvind mishra",
+      "email": "puneetkumar7772@gmail.com",
+      "fees": "2686",
+      "class": "8",
+      "mobileno": "2365346356",
+      "address": "spn",
+      "id": 3
+    },
+    {
+      "name": "3D Metaverse",
+      "fathername": "gvjhbkj",
+      "email": "asdfsdfb@gmail.com",
+      "fees": "4500",
+      "class": "12th",
+      "mobileno": "5436526636",
+      "address": "spn",
+      "id": 4
+    },
+    {
+      "name": "3D Metaverse",
+      "fathername": "gvjhbkj",
+      "email": "asdfsdfb@gmail.com",
+      "fees": "4500",
+      "class": "12th",
+      "mobileno": "5436526636",
+      "address": "spn",
+      "id": 5
+    }
   ]
 }

@@ -15,4 +15,19 @@ export class AuthStudentsService {
     return this.http.get(this.url)
   }
 
+  registerUser(body:any):Observable<any>{
+   return this.http.post(this.url,body)
+  }
+
+  deleteRegisterStudent(id:any):Observable<any>{
+    return this.http.delete(`${this.url}/${id}`)
+  }
+
+  updateData(body:any):Observable<any>{
+    return this.http.put(this.url,body)
+
+  }
+  getStudentById(id:number):Observable<any>{
+    return this.http.get(`${this.url}/${id}`)
+  }
 }
