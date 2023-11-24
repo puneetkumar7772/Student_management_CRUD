@@ -1,34 +1,24 @@
 {
   "Students": [
     {
+      "id": 3,
       "name": "puneet mishra",
       "fathername": "Mr.Arvind mishra",
       "email": "puneetkumar7772@gmail.com",
-      "fees": "2686",
+      "fees": "90000",
       "class": "8",
       "mobileno": "2365346356",
-      "address": "spn",
-      "id": 3
+      "address": "spn"
     },
     {
-      "name": "3D Metaverse",
-      "fathername": "gvjhbkj",
-      "email": "asdfsdfb@gmail.com",
-      "fees": "4500",
-      "class": "12th",
-      "mobileno": "5436526636",
-      "address": "spn",
-      "id": 4
-    },
-    {
-      "name": "3D Metaverse",
-      "fathername": "gvjhbkj",
-      "email": "asdfsdfb@gmail.com",
-      "fees": "4500",
-      "class": "12th",
-      "mobileno": "5436526636",
-      "address": "spn",
-      "id": 5
+      "id": 4,
+      "name": "Shivam Mishra",
+      "fathername": "Mr.Ramdev",
+      "email": "mishra3408@gmail.com",
+      "fees": "5000",
+      "class": "B.A",
+      "mobileno": "5436526638",
+      "address": "kant (spn)"
     }
   ]
 }
