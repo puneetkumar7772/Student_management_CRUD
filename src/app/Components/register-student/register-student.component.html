@@ -1,1 +1,75 @@
-<p>register-student works!</p>
+<!-- <div class="login login-container"> -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h1 class="navbar-brand name" href="#" style="color: #fff;  text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;">
+     SMS
+    </h1>
+      <a class="home" routerLink="/list">Home</a>
+    </div>
+  </nav>
+  <div>
+    <div class="login_section container">
+      <div>
+        <!-- <div class="login-image"> -->
+          <img class="login-image" src="../../../assets/1.jpg" alt="Side Image" style="border-radius:30px;">
+        <!-- </div> -->
+      </div>
+      <!-- <div> -->
+        <form class="login-form" [formGroup]="sellerForm" (ngSubmit)="submitForm()">
+          <h3>Add College</h3>
+          <div *ngIf="formSubmitted && sellerForm.invalid" class="error-message">
+            Please fill in all the required fields.
+          </div>
+          <div class="form-group">
+            <!-- <label for="name">Name</label> -->
+            <input class="form-control" type="text" id="text" name="Name" placeholder="Full name" formControlName="Name" required>
+          </div>
+          <div *ngIf="sellerForm.get('Name').touched && sellerForm.get('Name').invalid" class="error-message">
+            Name is required.
+          </div>
+          <div class="form-group">
+            <!-- <label for="text">Seller Id</label> -->
+            <input class="form-control" type="text" id="collegeID" name="collegeID" placeholder="collegeID" formControlName="collegeID" required>
+          </div>
+          <div *ngIf="sellerForm.get('collegeID').touched && sellerForm.get('collegeID').invalid" class="error-message">
+            collegeID is required.
+          </div>
+          <div class="form-group">
+            <!-- <label for="email">Email</label> -->
+            <input class="form-control" type="email" id="email" name="email" placeholder="email" formControlName="email" required>
+          </div>
+          <div *ngIf="sellerForm.get('email').touched && sellerForm.get('email').invalid" class="error-message">
+            Email is required.
+           </div>
+           <div class="form-group">
+            <!-- <label for="email">Email</label> -->
+            <input class="form-control" type="text" id="collegeName" name="collegeName" placeholder="collegeName" formControlName="collegeName" required>
+          </div>
+          <div *ngIf="sellerForm.get('collegeName').touched && sellerForm.get('collegeName').invalid" class="error-message">
+            Name is required.
+          </div>
+          <div class="form-group">
+            <!-- <label for="password">Password</label> -->
+            <input class="form-control" type="password" id="password" name="password" placeholder="Password" formControlName="password" required>
+          </div>
+          <div *ngIf="sellerForm.get('password').touched && sellerForm.get('password').invalid" class="error-message">
+            Password is required and must be at least 8 characters
+           </div>
+          <div class="form-group">
+            <!-- <label for="password">Confirmed Password</label> -->
+            <input class="form-control" type="password" id="confirmpassword" name="password" placeholder="Confirmed Password" formControlName="confirmedPassword" required>
+          </div>
+          <div *ngIf="sellerForm.get('confirmedPassword').touched && sellerForm.get('confirmedPassword').invalid" class="error-message">
+            Confirm Password is required.
+           </div>
+          <button type="submit">Register</button>
+          <div class="signup-link">
+            <p>If you are alredy registered? <a routerLink="/seller/login">Login</a></p>
+           </div>
+        </form>
+
+      <!-- </div> -->
+    </div>
+  </div>
