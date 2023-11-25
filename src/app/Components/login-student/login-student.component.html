@@ -1,2 +1,44 @@
-<p>login-student works!</p>
-<a routerLink="/register">Login</a>
+<!-- <div class="login login-container"> -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      SMS
+      </a>
+      <a class="home" routerLink="/add">Home</a>
+    </div>
+  </nav>
+  <div>
+    <div class="login_section container">
+      <div>
+        <!-- <div class="login-image"> -->
+          <img class="login-image" src="../../../assets/2.jpg" alt="Side Image">
+        <!-- </div> -->
+      </div>
+      <!-- <div> -->
+        <form class="login-form" [formGroup]="adminLoginForm" (ngSubmit)="adminLogin()">
+          <h3>Admin Login</h3>
+          <div *ngIf="formSubmitted && adminLoginForm.invalid" class="error-message">
+            Please fill in all the required fields.
+          </div>
+          <div class="form-group">
+            <!-- <label for="seller">Seller Id</label> -->
+            <input class="form-control" type="text" id="text" name="CollegeID" placeholder="CollegeID" formControlName="collegeID" required>
+          </div>
+          <div *ngIf="adminLoginForm.get('collegeID').touched && adminLoginForm.get('collegeID').invalid" class="error-message">
+            SellerID is required.
+          </div>
+          <div class="form-group">
+            <!-- <label for="password">Password</label> -->
+            <input class="form-control" type="password" id="password" name="password" placeholder="Password" formControlName="password" required>
+          </div>
+          <div *ngIf="adminLoginForm.get('password').touched && adminLoginForm.get('password').invalid" class="error-message">
+            Password is required and must be at least 8 characters.
+          </div>
+          <button type="submit">Login</button>
+          <div class="signup-link">
+            <p>Not registered? <a routerLink="/register">Register</a></p>
+           </div>
+        </form>
+      <!-- </div> -->
+    </div>
+  </div>

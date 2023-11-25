@@ -34,6 +34,9 @@ export class AuthStudentsService {
 
   collegeData(body:any):Observable<any>{
    return this.http.post(`${this.url_2}/register`,body)
-
   }
+
+  Adminlogin(body:any):Observable<any>{
+    return this.http.post(`${this.url_2}/login`,body)
+   }
 }
