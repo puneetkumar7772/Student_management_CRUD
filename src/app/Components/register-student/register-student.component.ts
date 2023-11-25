@@ -35,7 +35,7 @@ submitForm(){
     if(res){
       console.log("user registered")
       this.toastr.success("User Registered Successfully")
-      this.router.navigate(['/add'])
+      this.router.navigate(['/login'])
     }else{
       this.toastr.error("Registration failed")
       console.log("error")

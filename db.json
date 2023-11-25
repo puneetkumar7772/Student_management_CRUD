@@ -1,23 +1,13 @@
 {
   "Students": [
     {
-      "id": 3,
-      "name": "puneet mishra",
-      "fathername": "Mr.Arvind mishra",
-      "email": "puneetkumar7772@gmail.com",
-      "fees": "90000",
-      "class": "8",
-      "mobileno": "2365346356",
-      "address": "spn"
-    },
-    {
       "id": 4,
       "name": "Shivam Mishra",
       "fathername": "Mr.Ramdev",
       "email": "mishra3408@gmail.com",
-      "fees": "5000",
+      "fees": "15000",
       "class": "B.A",
-      "mobileno": "5436526638",
+      "mobileno": "54365266385555",
       "address": "kant (spn)"
     }
   ]
