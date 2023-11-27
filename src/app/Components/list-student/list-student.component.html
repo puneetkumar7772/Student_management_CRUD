@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Responsive Form</title>
+</head>
+<body>
+
+    <form [formGroup]="addQuestionForm" (ngSubmit)="addQuestion()" >
+      <div class="form-row">
+        <div class="form-group">
+          <label for="Questions">Questions</label>
+          <textarea class="form-control" type="text" id="Questions" name="Questions" rows="7" formControlName="Question"></textarea>
+        </div>
+      </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="Option1">Option:-1</label>
+            <input class="form-control" type="text" id="Option1" name="Option1" formControlName="option1">
+          </div>
+          <div class="form-group">
+            <label for="Option2">Option:-2</label>
+            <input class="form-control" type="text" id="Option2" name="Option2" formControlName="option2">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="Option3">Option:-3</label>
+            <input class="form-control" type="text" id="Option3" name="Option3" formControlName="option3">
+          </div>
+          <div class="form-group">
+            <label for="Option4">Option:-4</label>
+            <input class="form-control" type="text" id="Option4" name="Option4" formControlName="option4">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+              <label for="Answer">Answer:</label>
+              <select id="Answer" style="appearance: auto;" class="form-control" name="Answer" required  formControlName="answer">
+                <option  value="Select">--select--</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                  <option value="option3">Option 3</option>
+                  <option value="option4">Option 4</option>
+              </select>
+          </div>
+      </div>
+        <button type="submit" [disabled]="addQuestionForm.invalid">Add Question</button>
+    </form>
+
+</body>
+</html>

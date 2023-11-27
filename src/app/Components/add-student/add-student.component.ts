@@ -85,5 +85,10 @@ export class AddStudentComponent {
       this.getStudentsData()
     })
   }
+  resetForm() {
+    this.addStudentForm.reset();
+  }
+
+
 
 }

@@ -79,3 +79,12 @@ th{
   font-size: 18px;
   font-weight: bold;
 }
+.error-message{
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 9px;
+}
+::-webkit-inner-spin-button {
+ display: none;
+}
