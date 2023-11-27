@@ -4,8 +4,8 @@
     <div class="d-flex flex-row-reverse" style="gap: 10px;">
       <button class="p-2 btn btn-warning">Logout</button>
       <button class="p-2 btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Add Student</button>
-      <button class="p-2 btn btn-success" routerLink="/register">Register</button>
-      <button class="p-2 btn btn-danger" routerLink="/login">Login</button>
+      <!-- <button class="p-2 btn btn-success" routerLink="/register">Register</button>
+      <button class="p-2 btn btn-danger" routerLink="/">Login</button> -->
     </div>
   </div>
 </nav>
@@ -69,41 +69,62 @@
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input class="form-control" type="text" id="name" name="name" formControlName="name">
+                <div *ngIf="addStudentForm.get('name').touched && addStudentForm.get('name').invalid" class="error-message">
+                  Name is required.
+                </div>
               </div>
               <div class="form-group">
-                <label for="email">Father's name:</label>
+                <label for="Father's name">Father's name:</label>
                 <input class="form-control" type="text" id="Father" name="Father" formControlName="fathername" >
+                <div *ngIf="addStudentForm.get('fathername').touched && addStudentForm.get('fathername').invalid" class="error-message">
+                  father name is required.
+                </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="phone">Email:</label>
+                <label for="Email">Email:</label>
                 <input class="form-control" type="email" id="email" name="email" formControlName="email">
+                <div *ngIf="addStudentForm.get('email').touched && addStudentForm.get('email').invalid" class="error-message">
+                  Email is required.
+                </div>
               </div>
               <div class="form-group">
-                <label for="experience">Class:</label>
+                <label for="Class">Class:</label>
                 <input class="form-control" type="text" id="class" name="class" formControlName="class">
+                <div *ngIf="addStudentForm.get('class').touched && addStudentForm.get('class').invalid" class="error-message">
+                  Class is required.
+                </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="previousCompany">Fees:</label>
+                <label for="Fees">Fees:</label>
                 <input class="form-control" type="tel" id="Fees" name="Fees" formControlName="fees">
+                <div *ngIf="addStudentForm.get('fees').touched && addStudentForm.get('fees').invalid" class="error-message">
+                  Fees is required.
+                </div>
               </div>
               <div class="form-group">
-                <label for="currentCompany">Phone no:</label>
-                <input class="form-control" type="tel" id="Phone" name="Phone" formControlName="mobileno">
+                <label for="Phone no">Phone no:</label>
+                <input class="form-control" type="number" id="Phone" name="Phone" formControlName="mobileno">
+                <div *ngIf="addStudentForm.get('mobileno').touched && addStudentForm.get('mobileno').invalid" class="error-message">
+                  Phone no is required.
+                </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="Profile">Address:</label>
+                <label for="Address ">Address:</label>
                 <input class="form-control" type="text" id="Address" name="Address   " formControlName="address">
+                <div *ngIf="addStudentForm.get('address').touched && addStudentForm.get('address').invalid" class="error-message">
+                  Address is required.
+                </div>
               </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Student Register </button>
+              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" [disabled]="addStudentForm.invalid">Student Register </button>
             </div>
           </form>
         </div>
@@ -117,7 +138,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabe2"> Update Student</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  (click)="resetForm()"></button>
       </div>
       <div class="body">
         <div class="containers">
@@ -159,7 +180,7 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="resetForm()">Close</button>
               <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"(click)="updateData()">Update Student</button>
             </div>
           </form>
